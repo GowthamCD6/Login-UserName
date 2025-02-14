@@ -15,10 +15,10 @@ function App() {
 
       <Routes>
           <Route path="/Login-UserName/signin" element={<SignIn setIsAuthenticated={setIsAuthenticated} />} />
-          <Route path="/Login-UserName/home" element={isAuthenticated ? <Home onSignOut={handleSignOut} /> : <Navigate to="/LoginPageReact/signin" />} />
+          <Route path="/Login-UserName/home" element={isAuthenticated ? <Home onSignOut={handleSignOut} /> : <Navigate to="/Login-UserName/signin" />} />
           <Route path="/Login-UserName" element={<Navigate to="/Login-UserName/signin" />} />
       </Routes>
   );
 }
 
-export default Appt
+export default App
